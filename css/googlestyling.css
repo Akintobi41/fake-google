@@ -627,10 +627,14 @@
                    input[type="searchbox"]{ 
                           width:370px;
                           margin-left:-60px;
-
+                     }
+                     input[type="submit"]{ 
+                         display:none;
                      }
                      h1{ 
-                         margin-left:-135px;
+                         margin-left:-85px;
+                         margin-bottom:40px;
+                         width:35%;
                      }
                      .last{ 
                          left:-120;
@@ -640,10 +644,27 @@
                         left:-140;
                         font-size:19px;
                      }
-                     .small{ 
-                       margin-left:-230px;
-
+                     #container{ 
+                         position:relative;
                      }
+                     .small{ 
+                       position:absolute;
+                       left:330;
+                       top:200;
+                     font-size: 1.4em;
+                    }
+
+                    .aside{ 
+                        position:relative;
+                        bottom:0;
+                        left:-120;
+                        padding:0 20px;
+                        font-size:1.6em;
+                    }
+                    .nav{ 
+                        padding:15px;
+                    }
+
                      footer{ 
                          font-size:11px;
                      }
@@ -675,17 +696,29 @@
                      margin-left:-10px;
 
                   }
+                  img{ 
+                      left:35;
+                      bottom:69;
+                  }
 
              }
 
              @media screen and (max-width:400px){ 
+                 *{ 
+                     overflow-x: hidden;
+                 }
                 input[type="searchbox"]{ 
                     width:370px;
                     margin-left:-55px;
                     margin-right: 200px;
                   }
+                input[type="submit"]{ 
+                    display:none;
+                }
+
                   h1{ 
                     margin-left:-130px;
+                    width:35%;
                 }
                 .second{ 
                     left:-135;
