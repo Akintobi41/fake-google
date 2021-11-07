@@ -622,7 +622,7 @@
              @media screen and (max-width:414px){ 
                 *{ 
                     overflow-x:hidden; 
-                
+                    box-sizing:border-box;
                 }
                 img{ 
                      left:40;
@@ -630,7 +630,7 @@
                  }
                  input[type="searchbox"]{ 
                      padding-left: 40px;
-                     width:399px;
+                     width:300px;
                  }
                  input[type="submit"]{ 
                      display:none;
@@ -640,8 +640,9 @@
                      margin-top:-10px;
                     }
                  .aside{
+                     width:100%;
                      margin-top:10px;
-                     margin-left:-250px;
+                     margin-left:-130px;
                  }
                  .nav{ 
                      padding:20px;
