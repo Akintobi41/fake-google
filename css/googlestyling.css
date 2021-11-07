@@ -619,6 +619,40 @@
                  }
 
              }
+             @media screen and (max-width:414px){ 
+                *{ 
+                    overflow-x:hidden; 
+                
+                }
+                img{ 
+                     left:40;
+                     bottom:85;
+                 }
+                 input[type="searchbox"]{ 
+                     padding-left: 40px;
+                     width:399px;
+                 }
+                 input[type="submit"]{ 
+                     display:none;
+                 }
+                 div.small{ 
+                     font-size:1.4em;
+                     margin-top:-10px;
+                    }
+                 .aside{
+                     margin-top:10px;
+                     margin-left:-250px;
+                 }
+                 .nav{ 
+                     padding:20px;
+                 }
+                 h1{ 
+                     width:30%;
+                     bottom:-90;
+                     left:220;
+                 }
+                
+             }
              @media screen and (max-width:409px){ 
                    *{
                        font-size:11px;
