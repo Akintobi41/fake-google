@@ -484,3 +484,56 @@ footer nav ul.right-links {
     left: 68;
   }
 }
+@media screen and (min-width: 991px) {
+  * {
+    max-width: 1400px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  nav#header {
+    margin-top: 10px;
+    display: inline;
+  }
+  a.header {
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+  input[type="searchbox"] {
+    width: 620px;
+    margin-left: 10px;
+    font-size: 1.2em;
+    padding-left: 50px;
+  }
+  h1 {
+    width: 290px;
+    margin-top: 60px;
+  }
+  .small {
+    font-size: 0.9em;
+    margin-left: -250px;
+    margin-bottom: 45px;
+    margin-top: 10px;
+  }
+  .aside {
+    margin-top: -61px;
+    margin-left: 90px;
+  }
+  .nav {
+    font-size: 1.2em;
+    padding: 15px;
+  }
+  input[type="submit"] {
+    display: inline-block;
+    width: 145px;
+    margin-left: 34px;
+    margin-right: 5;
+  }
+  .footer-1 {
+    margin-left: 5px;
+    font-size: 1.35em;
+  }
+  img {
+    bottom: 128;
+    left: 40;
+  }
+}
