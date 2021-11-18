@@ -5,7 +5,20 @@
   padding: 0;
   font-family: Arial, sans-serif;
 }
-
+.logo {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("../Icons/grid.svg");
+  background-size: contain;
+}
+.logo-1 {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../Icons/hamburger.svg");
+  background-size: contain;
+}
 h1 {
   width: 290px;
   height: 102px;
@@ -73,6 +86,7 @@ input[type="submit"]:hover {
 a:hover {
   text-decoration: underline;
 }
+
 .nav:after {
   content: "";
   width: 100%;
@@ -107,6 +121,13 @@ footer nav ul li a:visited {
   color: #555;
   text-decoration: none;
   padding: 10px;
+}
+nav#header ul li a:active,
+footer nav ul li a:active {
+  color: black;
+}
+.nav:active {
+  color: black;
 }
 
 nav#header ul li a:hover,
@@ -168,6 +189,41 @@ footer nav ul.right-links {
     margin-bottom: 20px;
     margin-top: 200px;
   }
+
+  input[type="reset"] {
+    border-radius: 10%;
+    border: none;
+    width: 70px;
+    height: 25px;
+    background: blue;
+    color: white;
+    font-size: 0.7em;
+    font-weight: lighter;
+  }
+  span {
+    position: relative;
+  }
+  input[type="reset"] {
+    position: fixed;
+    right: 4;
+    top: 5;
+    height: 30px;
+  }
+  .logo {
+    width: 20;
+    height: 20;
+    position: fixed;
+    right: 80;
+    top: 8;
+  }
+
+  .logo-1 {
+    position: fixed;
+    width: 25;
+    height: 25;
+    left: 2;
+    top: 5;
+  }
   #header {
     display: none;
   }
@@ -223,6 +279,20 @@ footer nav ul.right-links {
     margin-left: -325px;
     font-size: 0.8em;
   }
+
+  input[type="reset"] {
+    position: fixed;
+    right: 4;
+    top: 5;
+    height: 30px;
+  }
+  .logo {
+    width: 20;
+    height: 20;
+    position: fixed;
+    right: 80;
+    top: 8;
+  }
   h1 {
     margin-left: -80px;
   }
@@ -241,6 +311,20 @@ footer nav ul.right-links {
     width: 300px;
     margin-left: -290px;
   }
+
+  input[type="reset"] {
+    position: fixed;
+    right: 4;
+    top: 5;
+    height: 30px;
+  }
+  .logo {
+    width: 20;
+    height: 20;
+    position: fixed;
+    right: 80;
+    top: 8;
+  }
   img {
     left: 45;
   }
@@ -250,6 +334,20 @@ footer nav ul.right-links {
     width: 320px;
     margin-left: -260px;
     font-size: 0.8em;
+  }
+
+  input[type="reset"] {
+    position: fixed;
+    right: 4;
+    top: 5;
+    height: 30px;
+  }
+  .logo {
+    width: 20;
+    height: 20;
+    position: fixed;
+    right: 80;
+    top: 8;
   }
   h1 {
     margin-left: -60px;
@@ -272,6 +370,20 @@ footer nav ul.right-links {
   input[type="searchbox"] {
     width: 350px;
     margin-left: -240px;
+  }
+
+  input[type="reset"] {
+    position: fixed;
+    right: 4;
+    top: 5;
+    height: 30px;
+  }
+  .logo {
+    width: 20;
+    height: 20;
+    position: fixed;
+    right: 80;
+    top: 8;
   }
   h1 {
     width: 190px;
@@ -327,11 +439,47 @@ footer nav ul.right-links {
     width: 410px;
     padding-left: 40px;
   }
+
+  input[type="reset"] {
+    position: fixed;
+    right: 4;
+    top: 5;
+    font-size: 0.9em;
+    height: 30px;
+  }
+  .logo {
+    width: 20;
+    height: 20;
+    position: fixed;
+    right: 80;
+    top: 8;
+  }
 }
 @media screen and (min-width: 501px) {
   input[type="searchbox"] {
     width: 430px;
     margin-left: -130px;
+  }
+
+  input[type="reset"] {
+    position: fixed;
+    right: 4;
+    top: 5;
+    font-weight: bold;
+    height: 35px;
+  }
+  .logo {
+    width: 20;
+    height: 20;
+    position: fixed;
+    right: 80;
+    top: 8;
+    width: 25px;
+    height: 25px;
+  }
+  .logo-1 {
+    width: 30px;
+    height: 30px;
   }
   h1 {
     width: 220px;
@@ -406,6 +554,27 @@ footer nav ul.right-links {
   * {
     overflow-y: hidden;
   }
+
+  input[type="reset"] {
+    position: fixed;
+    right: 4;
+    top: 5;
+    font-weight: bold;
+    height: 35px;
+  }
+  .logo {
+    width: 20;
+    height: 20;
+    position: fixed;
+    right: 80;
+    top: 8;
+    width: 25px;
+    height: 25px;
+  }
+  .logo-1 {
+    width: 30px;
+    height: 30px;
+  }
   input[type="searchbox"] {
     width: 515px;
     margin-left: -20px;
@@ -439,6 +608,9 @@ footer nav ul.right-links {
   .small {
     margin-left: 120px;
   }
+  .nav {
+    font-size: 1.1em;
+  }
   .aside {
     margin-left: 10px;
   }
@@ -457,6 +629,29 @@ footer nav ul.right-links {
     margin-left: 30px;
     font-size: 1.1em;
     padding-left: 40px;
+  }
+
+  input[type="reset"] {
+    position: fixed;
+    right: 4;
+    top: 5;
+    font-weight: bold;
+    height: 38px;
+    width: 72px;
+    text-align: center;
+  }
+  .logo {
+    width: 20;
+    height: 20;
+    position: fixed;
+    right: 80;
+    top: 8;
+    width: 30px;
+    height: 30px;
+  }
+  .logo-1 {
+    width: 35px;
+    height: 35px;
   }
   h1 {
     width: 270px;
@@ -493,6 +688,13 @@ footer nav ul.right-links {
   nav#header {
     margin-top: 10px;
     display: inline;
+  }
+  .logo,
+  .logo-1 {
+    display: none;
+  }
+  input[type="reset"] {
+    display: none;
   }
   a.header {
     font-size: 1.2em;
